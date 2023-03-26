@@ -12,7 +12,11 @@
 4. Contact (other page)
 
 ## Technical aspects ##
-+ I should use **grids**
-+ White, cream white, gray, *maybe* light green **colors**.
 
 + Semantic elements *after* the page has been constructed (HTML & CSS). [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques), [Semantic HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Element), 
++ *WOULD BE NICE* to have the my picture as a moving pictures (like in harry potter). :-D
++ Title of the page to change based on the #tags of the page. Using JS.
+
++ max-width: 750px -> first stem from big to small
+
++ 

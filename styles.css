@@ -1,0 +1,255 @@
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Jaldi&family=Jost&family=Jura&family=K2D&display=swap');
+:root {
+    --accent1: #2e5828;
+    --accent2: rgb(126, 1, 1);
+    --convasColor: #FBFBFB;
+  }
+
+body{
+    background-color: #CAC7C7;
+}
+.convas{
+    background-color: var(--convasColor);
+    margin: 70px auto;
+    border-radius: 30px;
+    box-shadow: 0px 0px 27px 1px rgba(0, 0, 0, 0.25);
+    padding: 0 2em;
+    height: 80vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-width: 1000px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.convas::-webkit-scrollbar{
+    display: none;
+}
+ul{
+    padding:0;
+}
+li{
+    list-style: none;
+}
+h1 {
+    margin: 0.5em 0;
+
+    font-family: 'K2D';
+}
+hr{
+    position: relative;
+    width: calc(100% + 4em);
+    left: -2em;
+    margin: 0;
+}
+h2{
+    font-family: 'Jaldi';
+    font-weight: 400;
+    font-size: 32px;
+    margin: 0;
+    margin-top: 30px;
+    
+}
+p{
+    font-family: 'Inter';
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 10px;
+}
+
+/********************/
+/* Header */
+/********************/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--convasColor);
+    padding: 0 2em;
+    /* position: absolute; */
+    border-bottom: 2px black solid;
+    margin: 0 -2em;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index: 2;
+} 
+header li{
+    display: inline-block;
+    margin-left: 1em;
+} a{
+    font-family: 'Jura';
+    /* font-style: normal; */
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000;
+}
+nav li:last-child a{
+    color: var(--accent2);
+    font-weight: bold;
+}
+nav li:first-child a{
+    color: var(--accent1);
+    font-weight: bold;
+}
+
+/********************/
+/* About me */
+/********************/
+#about-me {
+    /* width: 100%; */
+    display: flex;
+    /* background-color: aqua; */
+    align-items: center;
+    gap: 100px;
+    justify-content: space-between;
+}
+img{
+    width: 260px;
+}
+
+
+
+/********************/
+/* Projects */
+/********************/
+
+#projects ul{
+    padding-left: 1em;
+}
+#projects li{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  
+}
+#projects i{
+    margin-right: 10px;
+}
+#projects:target h2 {
+    /* color: #a81919; */
+    text-shadow: 0px 0px 3px rgb(251, 3, 3);
+    transition: text-shadow 1s;
+}
+
+
+/********************/
+/* Skills */
+/********************/
+#skills {
+    width: 100%;
+    /* display: flex; */
+}
+#skills h3{
+    font-family: 'Jaldi';
+    font-weight: 400;
+}
+
+#skills i{
+    font-size: 50px;
+    margin-right: 20px;
+    color: var(--accent1);
+}
+#skills ul{
+    display: flex;
+    gap: 20px;
+} 
+#skills li {
+    font-family: 'Inter';
+    border: 1px solid black;
+    border-radius: 2px;
+    box-shadow: 0 0 3px 1px var(--accent1);
+    padding: 10px;
+}
+#skills:target h2 {
+    /* color: #a81919; */
+    text-shadow: 0px 0px 3px rgb(251, 3, 3);
+    transition: text-shadow 1s;
+}
+
+/********************/
+/* Footer */
+/********************/
+footer *{
+    margin: 0;
+    padding: 0;
+}
+footer{
+    border-top: 2px black solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -2em;
+    margin-top: 30px;
+    padding: 1em 2em;
+    
+}
+footer p{
+    font-family: 'Jaldi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+}
+footer h3{
+    font-family: 'K2D';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
+footer i{
+    font-size: 1.3em;
+    margin-left: 0.3em;
+}
+
+
+/********************/
+/* Contact (page) */
+/********************/
+
+.picture-contact {
+    opacity: 0.5;
+}
+
+#contact-me > div{
+    display: flex;
+    justify-content: space-between;
+}
+#contact-me i{
+    font-size: 2.5em;
+    color: var(--accent2);
+     margin: 0 0.2em;
+
+}
+
+#contact-me td:nth-child(1){
+    text-align: end;
+    
+}
+#contact-me td:nth-child(2){
+    /* padding-left: 3em; */
+    /* padding-top: 1em; */
+    height: 60px;
+    vertical-align: middle;
+}
+#contact-me img{
+    position: relative;
+    top: -65px;
+    right: -17px;
+    /* z-index: 5; */
+}
+#contact-me .showup{
+    /* display: none; */
+    visibility: hidden;
+    vertical-align: middle;
+    /* transition: visibility 0s 1s ; */
+}
