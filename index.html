@@ -15,7 +15,7 @@
             <h1>Bogdan M Bejan</h1>
             <nav>
                 <ul>
-                    <li><a href="#">About Me</a></li>
+                    <li><a href="#about-me">About Me</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -28,31 +28,50 @@
             <section id="about-me">
                 <div class="description">
                     <h2>About Me</h2>
-                    <p> Hi! I am a junior web developer. 
-                        Focused more on back-end.
-                        I am self-leaning the IT as a result of doing a career switch.
-                        I believe in self-teaching because those who succeed doing so, not only gain knowledge but also self discipline.
-                        I am Univerty educated in ELectrical and Electronic Engineering.
-                        I do a career switch to IT because of the advantages.
+                    <p> Good <span id="saluteTime"></span>! I am a junior web developer focused on back-end. I am at the beginning of my jurney and,                       
+                            I am self-leaning the IT as a result of a career switch.</p>
+                    <p> I believe in self-teaching because those who succeed doing so, not only gain knowledge but also self discipline.</p>
+                    <p>I am Univerty educated in ELectrical and Electronic Engineering.</p>
+                    <p>I do a career switch to IT because of the advantages this industry has to offer and because I enjoy writing code.</p>
 
-                        In general I like enrolling in technical courses (free or paid) so, lately, I have signed-up for a long term traineeship that would, eventually, change my life - Web Development Coding.
+                    <p>In general I like enrolling to technical courses (free or paid) but, lately 
+                            I have signed-up for a <em>long term traineeship</em> that would, eventually, change my life - <em>Web Development Coding</em>.</p>
                         
-                        <br>I enjoy solving puzzles of all kind, think outside the box, play board games
-                        and spend time in nature. I am also into electric cars, robotics, smart homes, computer vision, golf and pool.
+                    <p>I enjoy solving puzzles of all kind, think outside the box, play board games
+                            and spend time in nature. I am also into electric cars, robotics, smart homes, computer vision, golf and pool.</p>
+                    <p>I am currently working for DB Languages.</p>
                         
-                    </p>
+                    <!-- <img src="./imgs/my-photo.jpeg" alt="picture of Bogdan" > -->
                 </div>
-                <div class="picture">
-                   <img src="./imgs/my-photo.jpeg" alt="picture of Bogdan" >
-                </div>
+                <img src="./imgs/my-photo.jpeg" alt="picture of Bogdan" >
+                <!-- <div class="picture">
+                   
+                </div> -->
             </section>
 
             <section id="projects">
                 <h2>Projects</h2>
                 <ul>
-                    <li><i class="fa-solid fa-arrow-right"></i>The calculator</li>
-                    <li><i class="fa-solid fa-arrow-right"></i>Mixed messages generator</li>
-                    <li><i class="fa-solid fa-arrow-right"></i>DB Languages</li>
+                    <li>
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <a class="link-title" href="./Calculator/index.html" alt="The calculator project" target="_blank">The calculator</a>
+                        <a href="https://github.com/bejanbogdan93/portfolio.git" alt="GitHub files" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </li>
+                    
+                    
+                    <li><i class="fa-solid fa-arrow-right"></i>
+                        <a href="#" id="mixed-massages-title">Mixed messages generator</a> <a href="https://github.com/bejanbogdan93/mixed_messages.git" alt="GitHub files" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <span id="mixed-massages-output"></span>
+                        <p id="mixed-massages-description">100% JavaScript code. Keep clicking the title to see the Output.</p>
+                    </li>
+                    
+                    
+                    <li><i class="fa-solid fa-arrow-right"></i>
+                        <a class="link-title" href="#" ><a href="http://www.dblanguages.com" target="_blank">DB Languages</a></a>
+                        <a href="https://github.com/bejanbogdan93/db-languages-webpage.git" alt="GitHub files" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </li>
                 </ul>
             </section>
 
@@ -88,6 +107,7 @@
         
     </div>
     <script src="https://kit.fontawesome.com/156391d817.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="index.js"></script>
+    <script src="mixed-messages.js"></script>
 </body>
 </html>
